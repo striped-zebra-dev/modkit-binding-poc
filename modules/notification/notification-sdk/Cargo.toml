@@ -1,0 +1,25 @@
+[package]
+name = "notification-sdk"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+rest-client = [
+    "dep:reqwest",
+    "dep:futures-util",
+    "dep:bytes",
+]
+
+[dependencies]
+modkit-contract-macros = { path = "../../../modkit-contract-macros" }
+modkit-contract-runtime = { path = "../../../modkit-contract-runtime" }
+async-trait = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+schemars = { workspace = true }
+futures-core = { workspace = true }
+tokio = { workspace = true }
+reqwest = { workspace = true, optional = true }
+futures-util = { workspace = true, optional = true }
+bytes = { workspace = true, optional = true }

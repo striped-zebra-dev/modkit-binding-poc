@@ -1,0 +1,21 @@
+[package]
+name = "poc-host"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+notification-sdk = { path = "../modules/notification/notification-sdk", features = ["rest-client"] }
+notification = { path = "../modules/notification/notification" }
+notification-plugin-email = { path = "../modules/notification-plugin/notification-plugin-email" }
+modkit-directory = { path = "../modkit-directory" }
+tokio = { workspace = true }
+futures-util = { workspace = true }
+serde_json = { workspace = true }
+
+[[bin]]
+name = "poc-host"
+path = "src/main.rs"
+
+[[bin]]
+name = "openapi-gen"
+path = "src/openapi_gen.rs"

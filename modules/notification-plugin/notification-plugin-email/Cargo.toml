@@ -1,0 +1,11 @@
+[package]
+name = "notification-plugin-email"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+notification-sdk = { path = "../../notification/notification-sdk" }
+async-trait = { workspace = true }
+tokio = { workspace = true }
+futures-core = { workspace = true }
+tokio-stream = { workspace = true }

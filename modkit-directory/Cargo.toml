@@ -1,0 +1,10 @@
+[package]
+name = "modkit-directory"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+modkit-contract-runtime = { path = "../modkit-contract-runtime" }
+reqwest = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }

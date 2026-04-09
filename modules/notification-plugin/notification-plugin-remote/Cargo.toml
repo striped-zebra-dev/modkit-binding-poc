@@ -1,0 +1,14 @@
+[package]
+name = "notification-plugin-remote"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+notification-sdk = { path = "../../notification/notification-sdk" }
+modkit-contract-runtime = { path = "../../../modkit-contract-runtime" }
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+futures-core = { workspace = true }
+futures-util = { workspace = true }
